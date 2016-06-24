@@ -6,7 +6,9 @@
 
 .menu {
   text-align:center;
-  background: red;
-  width: 500px;
-  
+  background: #c1d7d7;
+}
+
+#Stats {
+  width: 100px;
 }
