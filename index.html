@@ -37,10 +37,10 @@
             </div>
             <div class="row">
               <div class="col-lg-12">
-                <div id="StatsText"></div>
-                <div id="AboutText"></div>
-                <div id="PicturesText"></div>
-                <div id="ClipsText"></div>
+                <div id="StatsText">This is the stats text</div>
+                <div id="AboutText">This is the about</div>
+                <div id="PicturesText">Pictures</div>
+                <div id="ClipsText">Clips</div>
                 
               </div>
             </div>
@@ -59,8 +59,28 @@ $(function() {
   $("#ClipsText").hide();
 });
 
-$( "#").click(function() {
-  
+$( "#Stats").click(function() {
+  $("#AboutText").hide();
+  $("#PicturesText").hide();
+  $("#ClipsText").hide();
+});
+
+$( "#About").click(function() {
+  $("#StatsText").hide();
+  $("#PicturesText").hide();
+  $("#ClipsText").hide();
+});
+
+$( "#Pictures").click(function() {
+  $("#StatsText").hide();
+  $("#AboutText").hide();
+  $("#ClipsText").hide();
+});
+
+$( "#Clips").click(function() {
+  $("#StatsText").hide();
+  $("#PicturesText").hide();
+  $("#AboutText").hide();
 });
 
 // function toggleDiv(divId) {
