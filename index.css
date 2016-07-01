@@ -7,8 +7,11 @@
 .menu {
   background: #c1d7d7;
   float:left;
-  
-  
+}
+
+#homeIMG {
+  float: left;
+  margin-left: -50px;
 }
 
 #Stats {
