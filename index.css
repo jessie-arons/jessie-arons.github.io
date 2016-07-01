@@ -29,6 +29,7 @@
   margin-top:25px;
   overflow-y: scroll;
   height: 600px;
+  overflow-x:hidden;
 }
 
 #PicturesText img {
