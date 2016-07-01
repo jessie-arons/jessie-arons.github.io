@@ -7,9 +7,12 @@
 .menu {
   background: #c1d7d7;
   float:left;
-  padding-right: 30px;
-  padding-left: 30px;
   
+  
+}
+
+#Stats {
+  width:80px;
 }
 
 
