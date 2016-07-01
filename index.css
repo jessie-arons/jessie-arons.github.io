@@ -27,6 +27,8 @@
 
 #content {
   margin-top:25px;
+  overflow-y: scroll;
+  height: 600px;
 }
 
 #PicturesText img {
