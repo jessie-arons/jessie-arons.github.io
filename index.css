@@ -9,7 +9,6 @@
   float:left;
 }
 
-
 #Stats {
   width:115px;
 }
@@ -26,6 +25,8 @@
   width:115px;
 }
 
-
+#content {
+  margin-top:75px;
+}
 
 
