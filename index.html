@@ -38,7 +38,7 @@
             </div>
             <div class="row">
               <div class="col-xs-12" id="content">
-                  <div class="row">
+                  <div class="row AboutText">
                     <div class="col-xs-6 left-bio">
                       #7 Jessie Arons <br> Birth Year: 2002 <br> Height: 5' 1" <br> Position: Center <br> Grade: 9
                       </div>
@@ -46,7 +46,7 @@
                       Graduation Year: 2020 <br> Weight: 125 <br> Shoots: Right <br> GPA: 3.96
                     </div>
                   </div>
-                <div id="AboutText">
+                <div class="AboutText">
                   <br>
 <p> I started playing hockey when I was 5 years old, and am now starting my 9th season with the Jr. Sharks girls program. 
 I am 14 years old, going into 9th grade at Palo Alto High School. At the 2016 CAHA select camp, I was invited and attended the
@@ -89,13 +89,13 @@ $(function() {
 
 $( "#Stats").click(function() {
   $("#StatsText").show();
-  $("#AboutText").hide();
+  $(".AboutText").hide();
   $("#PicturesText").hide();
   $("#ClipsText").hide();
 });
 
 $( "#About").click(function() {
-  $("#AboutText").show();
+  $(".AboutText").show();
   $("#StatsText").hide();
   $("#PicturesText").hide();
   $("#ClipsText").hide();
@@ -104,7 +104,7 @@ $( "#About").click(function() {
 $( "#Pictures").click(function() {
   $("#PicturesText").show();
   $("#StatsText").hide();
-  $("#AboutText").hide();
+  $(".AboutText").hide();
   $("#ClipsText").hide();
 });
 
@@ -112,7 +112,7 @@ $( "#Clips").click(function() {
   $("#ClipsText").show();
   $("#StatsText").hide();
   $("#PicturesText").hide();
-  $("#AboutText").hide();
+  $(".AboutText").hide();
 });
 
 // function toggleDiv(divId) {
