@@ -39,3 +39,8 @@
 #header a {
   text-decoration: none;
 }
+
+#header a:hover {
+  color:#003333;
+}
+
