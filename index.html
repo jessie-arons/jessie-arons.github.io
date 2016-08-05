@@ -23,7 +23,7 @@
     
     <div class="row">
           <div class="col-xs-12">
-              <a href="http://jessie-arons.github.io"> <h1 id="header">Jessie Arons-Ice Hockey Resume</h1> </a>
+               <h1 id="header">Jessie Arons-Ice Hockey Resume</h1> </a>
           </div>
     </div>
     <div class="row">
@@ -107,6 +107,13 @@ $(function() {
   $("#ClipsText").hide();
 });
 
+$( "#header").click(function() {
+  $(".AboutText").show();
+  $("#StatsText").hide();
+  $("#PicturesText").hide();
+  $("#ClipsText").hide();
+});
+
 $( "#Stats").click(function() {
   $("#StatsText").show();
   $(".AboutText").hide();
@@ -134,6 +141,8 @@ $( "#Clips").click(function() {
   $("#PicturesText").hide();
   $(".AboutText").hide();
 });
+
+
 
 // function toggleDiv(divId) {
 //   $("Stats").toggle();
