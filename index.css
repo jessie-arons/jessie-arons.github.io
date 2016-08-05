@@ -36,11 +36,9 @@
   width:400px;
 }
 
-#header a {
+#header a:hover {
   text-decoration: none;
+    color:yellow;
 }
 
-#header a:hover {
-  color:yellow;
-}
 
