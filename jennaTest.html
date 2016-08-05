@@ -27,8 +27,8 @@
           </div>
     </div>
     <div class="row">
-      <div class="col-xs-1>
-          <div class="col-xs-7">
+      <div class="col-xs-2"></div>
+          <div class="col-xs-6">
             <div class="row">
               <div class="col-xs-12"></div>
               <a href="#"><div class="col-xs-2 menu" id="About" >About </div></a>
@@ -38,24 +38,8 @@
             </div>
             <div class="row">
               <div class="col-xs-12" id="content">
-                  <div class="row AboutText">
-                    <div class="col-xs-6 left-bio">
-                      #7 Jessie Arons <br> Birth Year: 2002 <br> Height: 5' 1" <br> Position: Center <br> Grade: 9
-                      </div>
-                    <div class="col-xs-6 right-bio">
-                      Graduation Year: 2020 <br> Weight: 125 <br> Shoots: Right <br> GPA: 3.96
-                    </div>
-                  </div>
-                <div class="AboutText">
-                  <br>
-<p> I started playing hockey when I was 5 years old, and am now starting my 9th season with the Jr. Sharks girls program. 
-I am 14 years old, going into 9th grade at Palo Alto High School. At the 2016 CAHA select camp, I was invited and attended the
-Multi-District camp in Colorado. My 2015-16 Jr Sharks team won the 14UAA Silver Stick regional tournament in Colorado, and was 
-the first Jr. Sharks team to win the San Jose MLK Tourney in the 14UAAA division. I was an assistant captain on my 12UAAA team
-in 2014-15. I played three spring seasons with the Redwood City Black Star Boys, and was invited to practice with their
-Bantam A 2015-16 team. I also play the electric guitar at the School of Rock, am learning to code, and am interested in
-photography and web design. This summer I'm helping a non-profit create a library for children in Morocco. 
-I love to play hockey and my goal is to play in college.</p> </div>
+                <div id="AboutText">#7 Jessie Arons <br>Birth Year: 2002 Graduation Year: 2020 <br> Height: 5' 1" Weight: 125 <br> Position: Center Shoots: Right <br> Grade: 9 GPA: 3.96<br>
+<br> I started playing hockey when I was 5 years old, and am now starting my 9th season with the Jr. Sharks girls program. I am 14 years old, going into 9th grade at Palo Alto High School. At the 2016 CAHA select camp, I was invited and attended the Multi-District camp in Colorado. My 2015-16 Jr Sharks team won the 14UAA Silver Stick regional tournament in Colorado, and was the first Jr. Sharks team to win the San Jose MLK Tourney in the 14UAAA division. I was an assistant captain on my 12UAAA team in 2014-15. I played three spring seasons with the Redwood City Black Star Boys, and was invited to practice with their Bantam A 2015-16 team. I also play the electric guitar at the School of Rock, am learning to code, and am interested in photography and web design. This summer I'm helping a non-profit create a library for children in Morocco. I love to play hockey and my goal is to play in college.</div>
                 <div id="StatsText">2015-16 Season with 14UAA Jr Shark Girls <br> <br> <table border="1" width="50%" cellpadding="4" cellspacing="3"><tr><th>GP</th><th>Goals</th><th>Assists</th><th>PM</th><tr><td>44</td><td>12</td><td>12</td><td>12</td></tr></table> </div>
                 <div id="PicturesText"> 
                 <img src="https://github.com/jessie-arons/jessie-arons.github.io/blob/master/images/celebration.JPG?raw=true">
@@ -82,20 +66,20 @@ I love to play hockey and my goal is to play in college.</p> </div>
 <script>
 
 $(function() {
-  $("#StatsText").hide();
+  $("#AboutText").hide();
   $("#PicturesText").hide();
   $("#ClipsText").hide();
 });
 
 $( "#Stats").click(function() {
   $("#StatsText").show();
-  $(".AboutText").hide();
+  $("#AboutText").hide();
   $("#PicturesText").hide();
   $("#ClipsText").hide();
 });
 
 $( "#About").click(function() {
-  $(".AboutText").show();
+  $("#AboutText").show();
   $("#StatsText").hide();
   $("#PicturesText").hide();
   $("#ClipsText").hide();
@@ -104,7 +88,7 @@ $( "#About").click(function() {
 $( "#Pictures").click(function() {
   $("#PicturesText").show();
   $("#StatsText").hide();
-  $(".AboutText").hide();
+  $("#AboutText").hide();
   $("#ClipsText").hide();
 });
 
@@ -112,7 +96,7 @@ $( "#Clips").click(function() {
   $("#ClipsText").show();
   $("#StatsText").hide();
   $("#PicturesText").hide();
-  $(".AboutText").hide();
+  $("#AboutText").hide();
 });
 
 // function toggleDiv(divId) {
