@@ -35,6 +35,7 @@
               <a href="#"><div class="col-xs-2 menu" id="Stats" >Stats </div></a>
               <a href="#"><div class="col-xs-2 menu" id="Pictures" >Pictures </div></a>
               <a href="#"><div class="col-xs-2 menu" id="Clips" >Clips </div></a>
+              <a href="#"><div class="col-xs-2 menu" id="Other" >Other </div></a>
             </div>
             <div class="row">
               <div class="col-xs-12" id="content">
@@ -122,6 +123,8 @@ I love to play hockey and my goal is to play in college.</p>
             </div>
             <div class="col-xs-1"></div>
     </div>
+    <div id="OtherText">
+    </div>
   </div>
 
 
@@ -131,6 +134,8 @@ $(function() {
   $("#StatsText").hide();
   $("#PicturesText").hide();
   $("#ClipsText").hide();
+  $("#OtherText").hide();
+
 });
 
 $( "#header").click(function() {
@@ -138,6 +143,8 @@ $( "#header").click(function() {
   $("#StatsText").hide();
   $("#PicturesText").hide();
   $("#ClipsText").hide();
+  $("#OtherText").hide();
+
 });
 
 $( "#Stats").click(function() {
@@ -145,6 +152,8 @@ $( "#Stats").click(function() {
   $(".AboutText").hide();
   $("#PicturesText").hide();
   $("#ClipsText").hide();
+  $("#OtherText").hide();
+
 });
 
 $( "#About").click(function() {
@@ -152,6 +161,8 @@ $( "#About").click(function() {
   $("#StatsText").hide();
   $("#PicturesText").hide();
   $("#ClipsText").hide();
+  $("#OtherText").hide();
+
 });
 
 $( "#Pictures").click(function() {
@@ -159,6 +170,8 @@ $( "#Pictures").click(function() {
   $("#StatsText").hide();
   $(".AboutText").hide();
   $("#ClipsText").hide();
+  $("#OtherText").hide();
+
 });
 
 $( "#Clips").click(function() {
@@ -166,7 +179,18 @@ $( "#Clips").click(function() {
   $("#StatsText").hide();
   $("#PicturesText").hide();
   $(".AboutText").hide();
+   $("#OtherText").hide();
 });
+  
+$( "#Other").click(function() {
+  $("#OtherText").show();
+  $("#ClipsText").hide();
+  $("#StatsText").hide();
+  $("#PicturesText").hide();
+  $(".AboutText").hide();
+});
+  
+  
 
 
 
