@@ -34,8 +34,8 @@
               <a href="#"><div class="col-xs-2 menu" id="About" >About </div></a>
               <a href="#"><div class="col-xs-2 menu" id="Stats" >Stats </div></a>
               <a href="#"><div class="col-xs-2 menu" id="Pictures" >Pictures </div></a>
-              <a href="#"><div class="col-xs-2 menu" id="Clips" >Clips </div></a>
-              <a href="#"><div class="col-xs-2 menu" id="Other" >Other </div></a>
+              <a href="#"><div class="col-xs-2 menu" id="Video" >Video </div></a>
+              <a href="#"><div class="col-xs-2 menu" id="Interests" >Interests </div></a>
               <div class="col-xs-1"></div>
             </div>
             <div class="row">
@@ -146,11 +146,11 @@ I love to play hockey and my goal is to play in college.</p>
                   <p>Skating at practice.</p>
                 </div>
               </div>
-                <div id="ClipsText">
+                <div id="VideoText">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/nQEfIODCcsM" frameborder="0" allowfullscreen></iframe> <br> <iframe width="560" height="330" src="https://www.youtube.com/embed/07Yg-BA2Rh4" frameborder="0" allowfullscreen></iframe>
                   </div>
                 <br>
-                   <div id="OtherText">
+                   <div id="InterestsText">
                     <div>
                       <br>
                       <img src="https://github.com/jessie-arons/jessie-arons.github.io/blob/master/images/Graffitti.jpg?raw=true">
@@ -205,8 +205,8 @@ I love to play hockey and my goal is to play in college.</p>
 $(function() {
   $("#StatsText").hide();
   $("#PicturesText").hide();
-  $("#ClipsText").hide();
-  $("#OtherText").hide();
+  $("#VideoText").hide();
+  $("#InterestsText").hide();
 
 });
 
@@ -214,8 +214,8 @@ $( "#header").click(function() {
   $(".AboutText").show();
   $("#StatsText").hide();
   $("#PicturesText").hide();
-  $("#ClipsText").hide();
-  $("#OtherText").hide();
+  $("#VideoText").hide();
+  $("#InterestsText").hide();
 
 });
 
@@ -223,8 +223,8 @@ $( "#Stats").click(function() {
   $("#StatsText").show();
   $(".AboutText").hide();
   $("#PicturesText").hide();
-  $("#ClipsText").hide();
-  $("#OtherText").hide();
+  $("#VideoText").hide();
+  $("#InterestsText").hide();
 
 });
 
@@ -232,8 +232,8 @@ $( "#About").click(function() {
   $(".AboutText").show();
   $("#StatsText").hide();
   $("#PicturesText").hide();
-  $("#ClipsText").hide();
-  $("#OtherText").hide();
+  $("#VideoText").hide();
+  $("#InterestsText").hide();
 
 });
 
@@ -241,38 +241,27 @@ $( "#Pictures").click(function() {
   $("#PicturesText").show();
   $("#StatsText").hide();
   $(".AboutText").hide();
-  $("#ClipsText").hide();
-  $("#OtherText").hide();
+  $("#VideoText").hide();
+  $("#InterestsText").hide();
 
 });
 
-$( "#Clips").click(function() {
-  $("#ClipsText").show();
+$( "#Video").click(function() {
+  $("#VideoText").show();
   $("#StatsText").hide();
   $("#PicturesText").hide();
   $(".AboutText").hide();
-   $("#OtherText").hide();
+   $("#InterestsText").hide();
 });
   
-$( "#Other").click(function() {
-  $("#OtherText").show();
-  $("#ClipsText").hide();
+$( "#Interests").click(function() {
+  $("#InterestsText").show();
+  $("#VideoText").hide();
   $("#StatsText").hide();
   $("#PicturesText").hide();
   $(".AboutText").hide();
 });
   
-  
-
-
-
-// function toggleDiv(divId) {
-//   $("Stats").toggle();
-//   $("About").toggle();
-//   $("Pictures").toggle();
-//   $("Clips").toggle();
-  
-// }  
   
 </script>
 
