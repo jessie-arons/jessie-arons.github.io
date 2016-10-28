@@ -13,22 +13,6 @@
   background: #c1d7d7;
 }
 
-#Stats {
-  width:115px;
-}
-
-#About {
-  width:115px;
-}
-
-#Pictures {
-  width:115px;
-}
-
-#Video {
-  width:115px;
-}
-
 #content {
   margin-top:25px;
   overflow-y: scroll;
